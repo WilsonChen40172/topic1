@@ -1,0 +1,149 @@
+
+
+a{
+    text-decoration: none;
+    color:#000;
+    font-family: 'Anton', sans-serif;
+    
+    
+}
+
+
+
+
+.area{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    transition: all .5s;
+}
+
+.area1 .video2{
+    height:100vh;
+    position: absolute;
+    filter:blur(3px);
+}
+
+.area1 .logo{
+    position: absolute;
+    top:0;
+    margin:20px;
+    /* cursor: pointer; */
+    
+}
+
+.logo img{
+    cursor: pointer;
+    width:110px;
+}
+
+.area1 .icon{
+    position: absolute;
+    object-fit: cover;
+    cursor: move;
+    top:40%;
+    left:40%;
+    /* transition: all .5s; */
+}
+
+
+.area1 .icon img{
+    widows: 200px;
+    height:200px;
+    padding-top: 10px;
+    transition: all .5s;
+}
+
+.area1 .icon img:hover{
+  
+    padding-top: 0px;
+   
+}
+
+.item_bottom{
+    position: absolute;
+    width:100%;
+    bottom: 5px;
+    display:flex;
+    align-items: center; 
+    justify-content: center;
+    
+    
+}
+
+.item_bottom p{
+    font-family: 'Raleway', sans-serif;
+    font-size:48px;
+    font-weight: bold;
+    color:#222;
+    display:inline-block;
+}
+
+.area2{
+    position: fixed;
+    /* z-index:-5; */
+    bottom:-100%; 
+    background:#111 no-repeat center center ;
+    background-size: cover ;
+    opacity: 1;
+    
+}
+
+.area2.active{
+    bottom:0%; 
+    /* z-index:1; */
+}
+
+.area2 nav{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:150px;
+}
+
+.area2 .logo{
+    top:0;
+    left:0;
+    margin:20px;
+    position: absolute;
+}
+
+.area2 nav img{
+    cursor: pointer;
+    width:110px;
+    
+}
+
+.area2 nav a{
+    color:#eee;
+    font-weight: bold;
+    padding: 50px 20px;
+    font-size:24px;
+}
+
+.area2 nav a:hover{
+    color:#ff9c00;
+    text-decoration: underline;
+}
+
+.area2 nav a.active{
+    color:#ff9c00;
+    text-decoration: underline;
+}
+
+.area2 nav .iclose{
+    top:0;
+    right:0;
+    margin:20px;
+    font-size:48px;
+    color:#eee;
+    position: absolute;
+}
+
+.area2 .commodity{
+    background:skyblue;
+    opacity: .7;
+    width:100%;
+    height:50px;
+}

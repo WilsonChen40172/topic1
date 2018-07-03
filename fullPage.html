@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fullpage</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .section{
+            width:100%;
+            height:100vh;
+            background-size: cover;
+        }
+        .slide{
+            width:100%;
+            height:100vh;
+        }
+        #section0{
+            background:brown;
+        }
+        #section1{
+            background:skyblue;
+        }
+        #section2{
+            background:purple;
+        }
+        #section3{
+            background:gray;
+        }
+    </style>
+</head>
+
+<body>
+        <div id="fullpage">
+                <div class="section "><h1>fullPage.js</h1></div>
+                <div class="section" id="section1">
+                    <div class="slide" id="slide1"><h1>Slide Backgrounds</h1></div>
+                    <div class="slide" id="slide2"><h1>Totally customizable</h1></div>
+                </div>
+                <div class="section" id="section2"><h1>Lovely images <br />for a lovely page</h1></div>
+                <div class="section" id="section3"><h1>One Image = One thousand words</h1></div>
+            </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <!-- fullPage -->
+    <!-- <script type="text/javascript" src="js/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="js/scrolloverflow.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <!-- fullPage -->
+    <script>
+        
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            verticalCentered: false
+        });
+    });
+
+    </script>
+</body>
+
+</html>
